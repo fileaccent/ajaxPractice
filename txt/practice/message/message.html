@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>message</title>
+    <link rel="stylesheet" href="message.css"/>
+    <script src="jquery.js"></script>
+    <script src="getMessage.js"></script>
+  </head>
+</html>
+<body>
+  <!--<h1 id="title">人员管理系统</h1>-->
+  <h1 id="messageTitle">个人信息</h1>
+  <div id="picture">
+    <img id="userPicture" src="title.jpg" alt="头像"/>
+  </div>  
+  <div id="container">
+    <from id="fromMessage" action="">
+      <div id="containerLeft">
+        <div id="name" class="fromPart"><!--分别用div包裹以调整位置-->
+          <label for="userName">姓名:</label>
+          <input id="userName" name="userName" placeholder="姓名"/>
+        </div>
+        <div id="sex" class="fromPart">
+          <label for="userSex">性别:</label>
+          <input id="userSex" name="userSex" placeholder="性别"/>
+        </div>
+        <div id="studentNum" class="fromPart">
+          <label for="userStudentNum">学号:</label>
+          <input id="userStudentNum" name="userStudentNum" placeholder="学号"/><br/>
+        </div>
+        <div id="academy" class="fromPart">
+          <label for="userAcademy">学院:</label>
+          <input id="userAcademy" name="userAcademy" placeholder="学院"/><br/>
+        </div> 
+      </div>
+      <div id="containerRight">
+        <div id="telephone" class="fromPart">
+          <label for="userTelephone">电话:</label>
+          <input id="userTelephone" name="userTelephone" placeholder="电话"/><br/>
+        </div>
+        <div id="email" class="fromPart">
+          <label for="userEmail">邮箱:</label>
+          <input id="userEmail" name="userEmail" placeholder="邮箱"/><br/>
+        </div>
+        <div id="department" class="fromPart">
+          <label for="userDepartment">部门:</label>
+          <input id="userDepartment" name="userDepartment" placeholder="部门"/><br/>
+        </div>
+        <div id="work" class="fromPart">
+          <label for="userWork">职位:</label>
+          <input id="userWork" name="userWork" placeholder="需填写"/><br/>
+        </div>
+      </div>
+      <div id="operate">
+        <input type="submit" id="submit" name="submit" value="提交"/> 
+        <input id="cancel" value="取消"/>
+      </div>
+    </from>
+    <div id="change">
+    <button type="button" id="changeManage">修改信息</button>
+    </div>
+  </div>
+</body>

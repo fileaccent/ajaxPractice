@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>testing.html</title>
+    <script src="jquery.js"></script>
+  </head>
+  <body>
+    <p id="text"></p>
+    <p id="heattopics"></p>
+    <script>
+        $.ajax({
+            url: "https://graduation2019.100steps.net/api/users",
+            type: "get",
+            xhrFields: {
+                withCredentials: true
+            },
+            success: function (data) {
+                for(var i in data){
+                  if(i=="collection"){
+                    for(var j in data.collection){
+                      for(var k in data.collection[j]){
+                        $("#text").append(k+":"+data.collection[j][k]+"<br/>");
+                      }
+                    }
+                  } 
+                  else{
+                    $("#text").append(i+":"+data[i]+"<br/>");
+                  }
+                }
+            }
+        });
+        $.ajax({
+          url:"https://graduation2019.100steps.net/api/users/heattopics",
+          type:"get",
+          xhrFields:{
+            withCredentials:true
+          },
+          success:function (data){
+            for(var i in data){
+              $("heattopics").append(i+":"+data[i]+"<br/>");
+            }
+          }
+        });
+        /*
+        $.get("https://graduation2019.100steps.net/api/users",
+         {withCredentials: true},
+          function(data){
+          data=eval("("+data+")");
+          for(var i in data){
+            $("#text").text+=i+":"+data[i]+"<br/>";
+          }
+          });
+      });*/
+    </script>
+  </body>
+</html>

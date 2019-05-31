@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>get.html</title>
+    <script src="jquery.js"></script>
+  </head>
+  <body>
+    <p id="text"></p>
+    <script>
+      $(function(){
+        $.getJSON("text.json",
+        function(data){
+          for(var i in data){
+            $("#text").append(i+":"+data[i]+"<br/>");
+          }
+        });
+      });
+      $(function(){
+        $.post("text.json",
+        function(data){
+          for(var i in data){
+            $("#text").append(i+":"+data[i]+"<br/>");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

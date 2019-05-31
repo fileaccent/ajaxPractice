@@ -1,0 +1,115 @@
+
+body{
+  height:100vh;
+  background: url(picture1.jpg) no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#headTitle{
+
+  position: absolute;
+  left:50%;
+  top:3vw;
+  transform:translate(-50%,-50%);
+  -o-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+
+  font-size:8vw;
+  color:white;
+  font-weight: lighter;
+
+}
+#titlePicture{
+
+  width:20vw;
+  height:20vw;
+  margin-top:8vw;
+  
+}
+#register{/*设置表单主题的格式*/
+
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  -o-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+
+  width: 70vw;
+  height:80vw;
+
+  font-family: "微软雅黑";
+  font-size: 5vw;
+  background-color:rgba(255,255,255,0.2);
+  color:black;
+  text-align:center;
+}
+#user{
+
+  width:65vw;
+  margin:0 auto;
+  margin-top:8vw;
+
+}
+#password{
+
+  width:65vw;
+  margin:0 auto;
+  margin-top:4vw;
+}
+input[type="text"]{
+
+  width:45vw;
+  height:8vw;
+  border:1px solid gray;
+  font-size:4vw;
+
+}
+input[type="password"]{/*设置输入框的格式*/
+
+  width:45vw;
+  height:8vw;
+  border:1px solid gray;
+  font-size:4vw;
+
+}
+#submit{
+
+  width:65vw;
+  margin:0 auto;
+  margin-top:5%;
+  text-align:left;
+}
+#registerSubmit{
+
+  width:65vw;
+  height:8vw;
+  outline:none;
+
+  font-family: "微软雅黑";
+  font-size: 5vw;
+  word-spacing: 5vw;
+
+  background-color:black;
+  color:white;
+  border: 1px solid black;
+  cursor: pointer;
+
+}
+#registerSubmit:hover{
+
+  background-color:lrgb(212, 140, 31);
+  border: 1px solid black;
+}
+#registerHint{
+
+  margin:0;
+  display: inline-block;
+  font-size:3vw;
+  color:red;
+
+}

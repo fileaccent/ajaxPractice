@@ -1,0 +1,107 @@
+
+body{
+  margin:0px;
+  background: url(picture.jpg) no-repeat;
+  background-size:100% 90%;
+  background-position:bottom right;
+  background-attachment:fixed;
+  
+}
+#headTitle{
+
+  position:absolute;
+  top:10px;
+  left:50%;
+  transform:translate(-50%,-50%);
+  -o-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+
+  font-size:40px;
+  color:rgb(47, 17, 128);
+
+}
+#titlePicture{
+
+  width:100px;
+  height:100px;
+  margin-top:10px;
+  
+}
+#register{/*设置表单主题的格式*/
+
+  position: absolute;
+  right:200px;
+  top:30%;
+  width: 300px;
+  height:300px;
+
+  font-family: "微软雅黑";
+  font-size: 15px;
+  background-color:rgba(255,255,255,0.5);
+  color:black;
+  text-align:center;
+}
+#user{
+
+  width:260px;
+  margin:0 auto;
+  margin-top:10%;
+
+}
+#password{
+
+  width:260px;
+  margin:0 auto;
+  margin-top:4%;;
+}
+input[type="text"]{
+
+  width:200px;
+  height:30px;
+  border:1px solid gray;
+
+}
+input[type="password"]{/*设置输入框的格式*/
+
+  width:200px;
+  height:30px;
+  border:1px solid gray;
+
+}
+#submit{
+
+  width:260px;
+  margin:0 auto;
+  margin-top:5%;
+  text-align:left;
+}
+#registerSubmit{
+
+  width:150px;
+  height:50px;
+  outline:none;
+
+  font-family: "微软雅黑";
+  font-size: 20px;
+  word-spacing: 20px;
+
+  background-color:black;
+  color:white;
+  border: 1px solid black;
+  cursor: pointer;
+
+}
+#registerSubmit:hover{
+
+  background-color:lrgb(212, 140, 31);
+  border: 1px solid black;
+}
+#registerHint{
+
+  margin:0;
+  display: inline-block;
+  font-size:10px;
+  color:red;
+
+}

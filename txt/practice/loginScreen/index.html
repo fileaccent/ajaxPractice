@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>index.html</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="jquery.js"></script>
+    <script src="changeCss.js"></script>
+    <script src="getMessage.js"></script>
+    <script src="test.js"></script>
+  </head>
+  <body> 
+    <div id="registerContainer">
+      <h1 id="headTitle">人员管理系统</h1>
+      <form id="register" action=" " method="post"> 
+        <img id="titlePicture" src="user.png" alt="大佬"/>
+        <div id="user">
+          <label for="registerName" >用户名:&nbsp;</label>
+          <input type="text" id="registerName" name="user" placeholder="请输入用户名" onblur="isUserCorrect()" value="zhaorong"/>
+         
+        </div>
+        <div id="password">
+          <label for="registerPassword" >密&nbsp;&nbsp;&nbsp;码:&nbsp;</label>
+          <input type="password" id="registerPassword" name="password" placeholder="请输入密码" onblur="isPasswordCorrect()" autocomplete="current-password" value="zhaorong"/>
+          
+        </div>
+        <div id="submit">
+          <input type="submit" id="registerSubmit" onclick="isUserCorrect();isPasswordCorrect();" value="登录"><p id="registerHint" ></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
